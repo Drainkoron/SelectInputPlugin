@@ -20,7 +20,7 @@ const getTemplate = (options = [], selectedID) => {
         `<div>
             <div data-type="input" class="input">
                 <span>${text}</span>
-                <div class="icon">+</div>
+                <div class="icon"><i class="fas fa-angle-down"></i></div>
             </div>
             <div class="dropDownContainer">${items.join('')}</div>
         </div>`
@@ -32,7 +32,7 @@ class SelectInput{
     constructor(inputContainer, options){
         this.inputContainer = inputContainer
         this.options = options
-        this.selectedID = 1
+        this.selectedID = null
         
         this.#optionsUpdate(this.options)
         this.#render()
@@ -80,12 +80,12 @@ class SelectInput{
     }
 
     open = () => {
-        this.$icon.innerHTML = '-'
+        this.$icon.innerHTML = '<i class="fas fa-angle-up"></i>'
         this.inputContainer.classList.add("open")
     }
     
     close = () => {
-        this.$icon.innerHTML = '+'
+        this.$icon.innerHTML = '<i class="fas fa-angle-down"></i>'
         this.inputContainer.classList.remove("open")
     }
 

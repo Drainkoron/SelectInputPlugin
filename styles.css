@@ -71,6 +71,7 @@ body {
 
 
 .SelectInput .input {
+    position: relative;
     border: 2px solid #c2c2c2;
     border-radius: 5px;
     padding: 3px 8px;
@@ -126,6 +127,11 @@ body {
 
 .SelectInput .icon {
     float: right;
+    position: absolute;
+    right: 5px;
+    height: 100%;
+    top: 3.5px;
+
 }
 
 ::-webkit-scrollbar {
