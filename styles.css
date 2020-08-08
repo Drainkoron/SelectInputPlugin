@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 600px){
+    body {
+        display: inline-grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+    }   
+}
+
+.SelectInput {
+
+}
+
+.buttons {
+    display: flex;
+    max-width: 200px;
+    color: white;
+    font-size: 18px;
+    border: 2px solid #4b62ca;
+    background-color: #5874ec;
+    border-radius: 5px;
+    padding: 2px 5px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.buttons:hover {
+    background-color: #4b62ca;
+    cursor: pointer;
+}
+
+.SelectInputActionsContainer {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 320px;
+    padding: 30px;
+}
+
+.SelectInputContainer {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 320px;
+    padding: 30px;
+}
+
+.SelectInput {
+    width: 280px;
+}
+
+
+.SelectInput .input {
+    border: 2px solid #c2c2c2;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.SelectInput.open .input {
+    border-radius: 5px 5px 0 0;
+}
+
+.SelectInput .input span {
+    overflow: hidden;
+    width: 200px;
+}
+
+.SelectInput .dropDownContainer {
+    height: 160px;
+    border-right: 1px solid #c2c2c2;
+    border-bottom: 1px solid #c2c2c2;
+    border-left: 1px solid #c2c2c2;
+    border-radius: 0 0 5px 5px;
+    padding: 3px 8px;
+    font-size: 15px;
+    box-shadow: 2px 2px 5px #333;
+    overflow-y: scroll;
+    visibility: visible;
+}
+
+.SelectInput .dropDownContainer {
+    visibility: hidden;
+}
+
+.SelectInput.open .dropDownContainer{
+    visibility: visible;
+}
+
+.SelectInput .items {
+    cursor: pointer;
+    border-bottom: 1px solid #c2c2c2;
+    padding: 6px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.SelectInput .items:hover {
+    background-color: #c2c2c2;
+}
+
+.SelectInput .items.selected {
+    color: #4b62ca;
+}
+
+.SelectInput .icon {
+    float: right;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 8px;
+}
