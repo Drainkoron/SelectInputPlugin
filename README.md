@@ -1,1 +1,1 @@
-"# selectInput-plugin" 
+"# SelectInputPlugin" 
