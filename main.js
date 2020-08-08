@@ -12,7 +12,7 @@ window.addEventListener("load", function(){
     })
     
     const actions = (event) => {
-        buttonType = event.target.getAttribute("data-type")
+        let buttonType = event.target.getAttribute("data-type")
         
         switch(buttonType){
             case "open":
