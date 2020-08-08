@@ -6,7 +6,7 @@ window.addEventListener("load", function(){
     const buttons = SelectInputActionsContainer.getElementsByClassName("buttons")
     const currentItemData = SelectInputActionsContainer.getElementsByClassName("currentItemData")[0]
     
-    input = new SelectInput(inputContainer, {
+    let input = new SelectInput(inputContainer, {
         placeholder:'Placeholder',
         items:['item1', 'item2', 'item3', 'item4', 'item5', 'item6'],
     })
